@@ -18,14 +18,14 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar"><!--navbar-light and bg-light are part of Bootstraps' default styling. I'll delete these and add my own styling later.-->
       <div class="container-fluid">
-        <a class="navbar-brand ps-4" href="./index.html">Vee Lawson</a> <!-- This is a clickable link. The # is a placeholder. If you replace # with ./index.html, this will be a link to your homepage.-->
+        <a class="navbar-brand ps-4" aria-current="page" href="./index.html">Vee Lawson</a> <!-- This is a clickable link. The # is a placeholder. If you replace # with ./index.html, this will be a link to your homepage.-->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button> <!--On small screen sizes, this will place the targeted content (within "#navbarNavDropdown" below) in a drop-down menu-->
         <div class="collapse navbar-collapse justify-content-end pe-4" id="navbarNavDropdown"> <!--I use justify-content-end to place the navbar items on the right side. Then, I use pe-4 to add some padding between the items and the edge of the container.-->
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">CV</a><!--I haven't created pages for "CV," "Research," or "Teaching" yet. Once I have, I'll replace the # with paths to those pages.-->
+              <a class="nav-link" href="#">CV</a><!--I haven't created pages for "CV," "Research," or "Teaching" yet. Once I have, I'll replace the # with paths to those pages.-->
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Research</a>
