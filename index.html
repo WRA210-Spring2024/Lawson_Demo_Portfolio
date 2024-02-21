@@ -8,20 +8,48 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Custom CSS -->
-    <link href="./style.css" rel="stylesheet" />
-    <title>Vee Lawson</title>
+    <link href="./style.css" rel="stylesheet" /> 
+    <!--Make sure that this ^custom stylesheet is placed below the Bootstrap stylesheet!
+    Remember that if two CSS rules of equal specificity conflict, the last rule will be applied.-->
+   
+    <title>Vee Lawson</title> <!--This is what the browser will show in the tab description when the page is opened.-->
   </head>
   <body>
-    <h1>Hello, world!</h1>
-    <div class="container">
-        <div class="row">
-            <div clas="col-sm-6">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur sequi dignissimos cupiditate blanditiis, laboriosam ea vitae delectus excepturi magni quia. Magni autem quisquam unde dolores maiores quam optio perferendis asperiores.</p>
-            </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar"><!--navbar-light and bg-light are part of Bootstraps' default styling. I'll delete these and add my own styling later.-->
+      <div class="container-fluid">
+        <a class="navbar-brand ps-4" href="./index.html">Vee Lawson</a> <!-- This is a clickable link. The # is a placeholder. If you replace # with ./index.html, this will be a link to your homepage.-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button> <!--On small screen sizes, this will place the targeted content (within "#navbarNavDropdown" below) in a drop-down menu-->
+        <div class="collapse navbar-collapse justify-content-end pe-4" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">CV</a><!--I haven't created pages for "CV," "Research," or "Teaching" yet. Once I have, I'll replace the # with paths to those pages.-->
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Research</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Teaching</a>
+            </li>
+          </ul>
         </div>
+      </div>
+    </nav> 
+    <div class="container">
+      <div class="row py-2">
+        <div class="col-md-6"> <!--On screens smaller than "medium," each column will take up the full width and stack on top of each other. Starting at medium, this column will take up half (6/12) the width.-->
+          <h1>Hi, I'm Vee Lawson.</h1>
+          <h3>I'm a multidisciplinary scholar working across rhetoric and writing & feminist and gender studies.</h3>
+          <p>Most of my work concerns ephemeral texts, rhetorical intimacy, and feminist/queer/trans community formation online.
+            <br>
+            In particular, I draw on cultural rhetorics and digital feminist practices to understand how we can use writing to form supportive communities, especially in times of hardship, under surveillance, and in other adverse environments.</p>
+        </div>
+        <div class="col-md-6">
+          <img src="./Placeholder.HEIC" class="img-fluid" alt="A view of the San Gabriel range from the side of Mt. Baden-Powell.">
+        </div>
+      </div>
     </div>
-
-    <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
