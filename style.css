@@ -1,27 +1,50 @@
+ /* colors for easier reference:
+ mauve: #8C7484
+ dark mauve: #401F35
+ vibrant mint: #B6F2E1
+ muted mint: #BAD9C8
+ very light muted mint: #EDFCF4
+ near black: #1A2601
+ rose: #BF807A
+
+
+
+ */
+
+ /* setting font colors*/
  h1 {
     font-family: "Comfortaa", sans-serif;
     font-size: 2.0rem;
-    color:#991CFF;
+    color:#1A2601;
 }
 
+h2, h3, h4, h5, h6 {
+    color:#1A2601;
+}
+
+p {
+    color: #1A2601;
+}
+
+/* setting the background color for all pages */
 body {
-    background-color: #DDDBFE;
+    background-color: #EDFCF4;
 }
 
 /*I've named a section of my HTML "navbar" using id="navbar" and as a result, I can target it in my CSS using #navbar! */
 #navbar {
-    background-color: aqua;
+    background-color: #BAD9C8;
 }
 
 
 /* This styles generic links on my website */
 a {
-    color: black;
+    color: #401F35;
 }
 
 /* This styles links when I hover over them with my mouse */
 a:hover {
-    color:darkmagenta;
+    color:#BF807A;
     text-decoration: underline;
 }
 
@@ -31,14 +54,22 @@ a:visited {
 }
 
 /* This styles links in my navbar, which are set to be a special class */
-.navlink {
-    color: black;
+.nav-link {
+    color: #401F35;
 }
 
-.navlink:hover {
-    color: darkmagenta;
+.nav-link:hover {
+    color: #BF807A;
 }
 
-.navlink:visited {
-    color:darkcyan;
+.nav-link:visited {
+    color: #401F35; /* I'm including this here so you see it can be done, but I've set it to be the same color as when the link was unclicked */
+}
+
+.navbar-brand {
+    color:#401F35;
+}
+
+.navbar-brand:hover {
+    color: #BF807A;
 }
