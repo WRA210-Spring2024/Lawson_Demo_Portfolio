@@ -8,10 +8,37 @@ body {
     background-color: #DDDBFE;
 }
 
+/*I've named a section of my HTML "navbar" using id="navbar" and as a result, I can target it in my CSS using #navbar! */
 #navbar {
     background-color: aqua;
 }
 
+
+/* This styles generic links on my website */
 a {
     color: black;
+}
+
+/* This styles links when I hover over them with my mouse */
+a:hover {
+    color:darkmagenta;
+    text-decoration: underline;
+}
+
+/* This styles links that I've already clicked */
+a:visited {
+    color:darkcyan;
+}
+
+/* This styles links in my navbar, which are set to be a special class */
+.navlink {
+    color: black;
+}
+
+.navlink:hover {
+    color: darkmagenta;
+}
+
+.navlink:visited {
+    color:darkcyan;
 }

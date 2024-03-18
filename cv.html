@@ -15,27 +15,37 @@
     <title>Vee Lawson</title> <!--This is what the browser will show in the tab description when the page is opened.-->
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar"><!--navbar-light and bg-light are part of Bootstraps' default styling. I'll delete these and add my own styling later.-->
-        <div class="container-fluid">
-          <a class="navbar-brand ps-4" href="./index.html">Vee Lawson</a> <!-- This is a clickable link. The # is a placeholder. If you replace # with ./index.html, this will be a link to your homepage.-->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button> <!--On small screen sizes, this will place the targeted content (within "#navbarNavDropdown" below) in a drop-down menu-->
-          <div class="collapse navbar-collapse justify-content-end pe-4" id="navbarNavDropdown"> <!--I use justify-content-end to place the navbar items on the right side. Then, I use pe-4 to add some padding between the items and the edge of the container.-->
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#">CV</a><!--I haven't created pages for "CV," "Research," or "Teaching" yet. Once I have, I'll replace the # with paths to those pages.-->
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Research</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="./teaching.html">Teaching</a> <!--I've moved the aria-current attribute here to tell screenreaders that this is the current page!-->
-              </li>
-            </ul>
-          </div>
+    <nav class="navbar navbar-expand-lg" id="navbar"><!--navbar-light and bg-light are part of Bootstraps' default styling. I'll delete these and add my own styling later.-->
+      <div class="container-fluid">
+        <a class="navbar-brand ps-4" aria-current="page" href="./index.html">Vee Lawson</a> <!-- This is a clickable link. The # is a placeholder. If you replace # with ./index.html, this will be a link to your homepage.-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button> <!--On small screen sizes, this will place the targeted content (within "#navbarNavDropdown" below) in a drop-down menu-->
+        <div class="collapse navbar-collapse justify-content-end pe-4" id="navbarNavDropdown"> <!--I use justify-content-end to place the navbar items on the right side. Then, I use pe-4 to add some padding between the items and the edge of the container.-->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="./cv.html">CV</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./research.html">Research</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./teaching.html">Teaching</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav> 
+    <div class="container-fluid">
+      <div class="row mt-5">
+        <div class="col-md-4">
+          <h4>Click on this <a href="./CV.pdf" target="_blank">link</a> to open my CV in a PDF!</h4>
+        </div>
+        <div class="col-md-8">
+          <embed src="./CV.pdf" type="application/pdf" style="width: 100%; height: 100vh;">
+        </div>
+      </div>
+    </div>
     <!--When I made this new page, I copied the <head> sections of my index.html file because all HTML files require the same 4 basic tags (<!DOC TYPE html>, <head>, <html>, and <body>).-->
     <!--I also copied over the navigation bar, with some small changes: I moved the aria-current attribute from the home section to the "CV" section in order to tell screen readers that this is the current page.-->
     <!--Next, I can add new content, using the same container-row-column pattern as I did before.-->
