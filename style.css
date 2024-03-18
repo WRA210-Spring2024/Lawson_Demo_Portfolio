@@ -1,3 +1,17 @@
  h1 {
     font-family: "Comfortaa", sans-serif;
+    font-size: 2.0rem;
+    color:#991CFF;
+}
+
+body {
+    background-color: #DDDBFE;
+}
+
+#navbar {
+    background-color: aqua;
+}
+
+a {
+    color: black;
 }
