@@ -30,7 +30,7 @@
         <div class="collapse navbar-collapse justify-content-end pe-4" id="navbarNavDropdown"> <!--I use justify-content-end to place the navbar items on the right side. Then, I use pe-4 to add some padding between the items and the edge of the container.-->
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="./cv.html">CV</a>
+              <a class="nav-link" href="./cv.html">CV</a> <!-- If you want to link to a section on your main page, not a new page, first add id="UniqueName" to the class on your target div, like the #about example below. Then, add #UniqueName after the href in this link -->
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./research.html">Research</a>
@@ -43,7 +43,7 @@
       </div>
     </nav> 
     <!--I'm starting the "main content" here, below the navbar.-->
-    <div class="container">
+    <div class="container" id="about">
       <div class="row py-5">
         <div class="col-md-6"> <!--On screens smaller than "medium," each column will take up the full width and stack on top of each other. Starting at medium, this column will take up half (6/12) the width.-->
           <h1>Hi, I'm Vee Lawson.</h1>
